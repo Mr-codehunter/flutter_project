@@ -1,4 +1,4 @@
-# superfine_data_collection
+# SuperFine Collector
 
 A new Flutter project.
 
