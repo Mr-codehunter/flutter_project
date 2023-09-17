@@ -1,0 +1,17 @@
+import 'package:superfine_data_collection/pages/home.dart';
+import 'package:superfine_data_collection/Authenticate/loginscreen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+
+class Authenticate extends StatelessWidget {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
+  @override
+  Widget build(BuildContext context) {
+    if (_auth.currentUser != null) {
+      return HomePage();
+    } else {
+      return LoginScreen();
+    }
+  }
+}
